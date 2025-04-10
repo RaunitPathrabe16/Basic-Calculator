@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1a1b6d 0%, #0d0f3a 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.calculator-and-history {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: 'Bodoni MT', 'Bodoni 72', 'Bodoni', serif;
+    color: #FFA500;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-style: italic;
+}
+
+.calculator {
+    background: #1c215c;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 330px;
+    border: 2px solid #4a5bbf;
+}
+
+#display {
+    width: calc(100% - 20px);
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background: #cfd9e4;
+    color: #000;
+    text-align: right;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background: #e6edf4;
+    color: #000;
+    cursor: pointer;
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.3),
+        inset -2px -2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+button:nth-child(1), /* C button */
+button:nth-child(19) { /* = button */
+    background: #FFA500;
+    color: #fff;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.history-section {
+    margin-top: 30px;
+    background: #1c215c;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.history-section {
+    background: linear-gradient(135deg, #2d3780 0%, #1c215c 100%);
+    padding: 10px 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    text-align: center;
+    border: 2px solid #4a5bbf;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .calculator {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+#historyList {
+    list-style: none;
+    padding: 0;
+    max-height: 80px;
+    overflow-y: auto;
+    margin: 0;
+    color: #fff;
+    text-align: left;
+    font-size: 12px;
+    word-break: break-word;
+}
+
+#clearHistory {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #ff5f5f;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#clearHistory:hover {
+    background-color: #e04b4b;
+}
