@@ -47,8 +47,8 @@ Watch the working demo here: [Demo Video](https://your-demo-video-link.com)
 | HTML5        | Structure and layout of the calculator       |
 | CSS3         | Styling, neumorphism design, responsiveness  |
 | JavaScript   | Logic for calculations and history management |
-| MongoDB *(optional)* | Persistent storage for history (optional) |
-| Figma / Illustrator *(optional)* | UI and logo design (if used) |
+| MongoDB      | Persistent storage for history  |
+
 
 ---
 
